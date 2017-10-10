@@ -1,3 +1,24 @@
-lc develop branch
 
-hello world
+隐藏／显示 文件夹  command+shift+.
+
+
+Macintosh HD -> 用户 -> licheng -> .ssh -> id_ras.pub -> 内容复制进github
+创建： ssh-keygen -t rsa -C "123247442@qq.com" -> /User/licheng/.ssh/ 隐藏文件夹
+分布式，多台电脑则多个仓库则多个 ssh key ，保证推送和拉取操作不被冒充
+
+
+SourceTree -> 新建... -> 从URL克隆 -> ...
+
+
+git操作步骤
+第一次
+1、添加本地develop分支，拉取（跟踪）远程develop分支
+2、新建本地licheng_dev分支，在licheng_dev上开发
+后续
+3、提交到本地仓库：工作区workspace->文件状态->提交 （licheng_dev提交到本地仓库）
+4、合并最新代码：
+  a.切换到本地develop分支，拉取（获取到远程仓库develop分支最新代码），提交（develop分支提交到本地仓库）；
+  b.切换到本地licheng_dev分支，在本地develop分支上鼠标右键->合并develop到licheng_dev；（最新代码与本地licheng_dev分支上开发的内容合并）
+  c.若有冲突，解决冲突，解决后再继续提交到本地仓库，即第3步。
+5、推送到远程仓库：licheng_dev推送（本地仓库licheng_dev分支推到远程仓库licheng_dev分支）
+6、申请合并：GitLib -> Merge Request （开发组长审核，然后将远程仓库的licheng_dev分支和develop分支合并，远程仓库develop分支在最新代码基础上得到自己开发的内容）
