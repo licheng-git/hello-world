@@ -4,7 +4,7 @@
 
 Macintosh HD -> 用户 -> licheng -> .ssh -> id_ras.pub -> 内容复制进github
 创建： ssh-keygen -t rsa -C "123247442@qq.com" -> /User/licheng/.ssh/ 隐藏文件夹
-分布式，多台电脑则多个仓库则多个 ssh key ，保证推送和拉取操作不被冒充
+分布式，多台电脑则多个仓库则多个ssh_key，保证推送和拉取操作不被冒充
 
 
 SourceTree -> 新建... -> 从URL克隆 -> ...
