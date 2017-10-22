@@ -1,5 +1,10 @@
 
-隐藏／显示 文件夹  command+shift+.
+隐藏／显示 文件夹
+mac OS 10.12    command+shift+.
+mac OS 10.11    显示  defaults write com.apple.finder AppleShowAllFiles -bool true
+                      killall Finder
+                隐藏  defaults write com.apple.finder AppleShowAllFiles -bool false
+                      killall Finder
 
 
 Macintosh HD -> 用户 -> licheng -> .ssh -> id_ras.pub -> 内容复制进github
