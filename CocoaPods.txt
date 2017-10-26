@@ -1,0 +1,35 @@
+http://www.jianshu.com/p/0ba9edf8428d
+
+
+// *_* 非得设置密码
+
+1、升级ruby环境
+sudo gem update —-system
+输入密码，回车，等待    
+
+2、替换ruby镜像
+// gem sources -l
+gem sources —-remove https://rubygems.org/
+gem sources -a https://gems.ruby-china.org/
+// gem sources -l
+
+3、安装CocoaPods
+//sudo gem install cocoapods
+//输入密码，回车，等待
+// 失败
+sudo gem install -n /usr/local/bin cocoapods
+pod setup    // 耗时很久
+
+4、使用（测试是否安装成功）
+pod search AFNetworking
+
+
+.xcodeproj同级目录下心间Podfile文件
+cd /Users/licheng/Documents/lc\ 资料/lc_git/lcTest_Swift_2017
+pod install
+
+
+// 如果碰到Podfile中有失败的，可以 1、先注释掉报错的第三方库  2、pod install  3、再放开  4、pod install
+
+
+
